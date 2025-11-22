@@ -12,7 +12,7 @@
 
 nav {
     background-color: var(--secondary-color);
-    padding: 10px;
+    padding: 1rem;
 }
 
 nav a {
@@ -79,4 +79,8 @@ footer {
     padding: 1rem;
     background-color: var(--secondary-color);
     color: var(--font-color);
+}
+
+.indent {
+    padding-left: 2rem;
 }
