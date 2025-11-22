@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #4e62a2;
+    --secondary-color: #2b6e5d;
+    --accent1-color: #23286e;
+    --accent2-color: #164035;
+    --heading-font: serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 64px;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    width: 30%;
+    top: 110px;
+    left: 518px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    box-shadow: 0 0 30px #333;
+}
+
+h2 {
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 1px solid var(--accent1-color);
+}
