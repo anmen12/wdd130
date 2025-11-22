@@ -1,10 +1,22 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #ebedf4;
+    --font-color: #63478d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: #eee;
+    background-color: var(--secondary-color);
     padding: 10px;
 }
 
 nav a {
-    color: #000;
+    color: var(--font-color);
     padding: 0;
     display: block;
 }
@@ -14,21 +26,32 @@ main {
 }
 
 main img {
+    margin: 1rem;
     width: 150px;
     height: auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 0;
     box-shadow: 0 0 30px #333;
+    float: right;
+}
+
+h1 {
+    color: var(--font-color);
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+main ul {
+    clear: both;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -36,16 +59,24 @@ aside img {
     height: auto;
 }
 
-h1 {
-    color: #000;
-}
-
-p {
-    padding: 0;
+aside h2 {
+    top: 33px;
+    left: 191px;
+    position: absolute;
 }
 
 footer {
     margin-top: 10px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
 }
