@@ -1,8 +1,8 @@
 :root {
     --primary-color: #4e62a2;
-    --secondary-color: #2b6e5d;
+    /*--secondary-color: #2b6e5d;*/
     --accent1-color: #23286e;
-    --accent2-color: #164035;
+    /*--accent2-color: #164035;*/
     --heading-font: serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body {
