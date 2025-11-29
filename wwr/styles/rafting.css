@@ -1,8 +1,8 @@
 :root {
     --primary-color: #4e62a2;
-    /*--secondary-color: #2b6e5d;*/
+    --secondary-color: #2b6e5d;
     --accent1-color: #23286e;
-    /*--accent2-color: #164035;*/
+    --accent2-color: #164035;
     --heading-font: serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -35,11 +35,6 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
-}
-
-.socialmedia a img {
-    width: 64px;
-    height: auto;
 }
 
 .hero {
@@ -79,16 +74,116 @@ h1 {
     box-shadow: 0 0 30px #333;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr;
+    grid-template-rows: 1fr;
+}
+
+header img {
+    grid-column-start: 2;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+.sep-border {
+    border-right: 1px solid var(--accent1-color);
+}
+
+header nav ul li a {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
 h2 {
     width: 100%;
     height: auto;
-    padding: 16px 0;
     text-align: center;
+    color: #fff;
+}
+
+section {
     background-color: var(--accent1-color);
     color: #fff;
 }
 
+.history div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history div img {
+    width: 30%;
+    height: auto;
+}
+
+.adventure div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.adventure div figure {
+    padding: 16px 10px 0 10px;
+}
+
+.adventure div figure img {
+    width: 130px;
+    height: 130px;
+}
+
+.adventure div figure figcaption {
+    text-align: center;
+    color: #fff;
+}
+
 footer {
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
     margin-top: 10px;
     border-top: 1px solid var(--accent1-color);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2;
+}
+
+footer div p {
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: right;
+}
+
+footer nav a img {
+    width: 32px;
+    height: auto;
 }
