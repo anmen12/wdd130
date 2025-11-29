@@ -1,8 +1,6 @@
 :root {
     --primary-color: #4e62a2;
-    /*--secondary-color: #2b6e5d;*/
     --accent1-color: #23286e;
-    /*--accent2-color: #164035;*/
     --heading-font: serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -150,7 +148,6 @@ section {
 }
 
 .adventure figure {
-    grid-row: 2;
     padding: 48px 10px 0 10px;
 }
 
