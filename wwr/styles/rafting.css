@@ -1,8 +1,8 @@
 :root {
     --primary-color: #4e62a2;
-    --secondary-color: #2b6e5d;
+    /*--secondary-color: #2b6e5d;*/
     --accent1-color: #23286e;
-    --accent2-color: #164035;
+    /*--accent2-color: #164035;*/
     --heading-font: serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -138,21 +138,28 @@ section {
     height: auto;
 }
 
-.adventure div {
+.adventure {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
 }
 
-.adventure div figure {
-    padding: 16px 10px 0 10px;
+.adventure h2 {
+    position: absolute;
+    top: 8px;
 }
 
-.adventure div figure img {
+.adventure figure {
+    grid-row: 2;
+    padding: 48px 10px 0 10px;
+}
+
+.adventure figure img {
     width: 130px;
     height: 130px;
 }
 
-.adventure div figure figcaption {
+.adventure figure figcaption {
     text-align: center;
     color: #fff;
 }
