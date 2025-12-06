@@ -21,7 +21,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color)
 }
@@ -46,11 +46,14 @@ nav, p, section, article {
 }
 
 h1 {
+    text-align: center;
+}
+
+.overlay {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px 0;
-    text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
@@ -119,6 +122,15 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+h4 {
+    font-weight: normal;
+}
+
 section {
     background-color: var(--accent1-color);
     color: #fff;
@@ -142,23 +154,94 @@ section {
     position: relative;
 }
 
-.adventure h2 {
+.adventure h2, .employees h2 {
     position: absolute;
     top: 8px;
 }
 
-.adventure figure {
+.adventure figure, .employees figure {
     padding: 48px 10px 0 10px;
 }
 
-.adventure figure img {
+.adventure figure img, .employees figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 130px;
     height: 130px;
 }
 
-.adventure figure figcaption {
+.adventure figure figcaption, .employees figure figcaption {
     text-align: center;
     color: #fff;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.map iframe {
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.text input {
+    width: 340px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+}
+
+textarea {
+    display: block;
+    width: 400px;
+}
+
+input, textarea {
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+button {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 16px;
+    width: 400px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-size: medium;
 }
 
 footer {
