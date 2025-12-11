@@ -134,6 +134,7 @@ h4 {
 section {
     background-color: var(--accent1-color);
     color: #fff;
+    border-radius: 10px
 }
 
 .history div {
@@ -146,6 +147,8 @@ section {
 .history div img {
     width: 30%;
     height: auto;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px var(--primary-color);
 }
 
 .adventure {
@@ -154,29 +157,79 @@ section {
     position: relative;
 }
 
-.adventure h2, .employees h2 {
+.adventure h2, .employees h2, .home h2, .trips h2 {
     position: absolute;
     top: 8px;
 }
 
-.adventure figure, .employees figure {
+.adventure figure, .employees figure, .home figure, .trips figure {
     padding: 48px 10px 0 10px;
 }
 
-.adventure figure img, .employees figure img {
+.adventure figure img, .employees figure img, .home figure img, .trips figure img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 130px;
     height: 130px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px var(--primary-color);
 }
 
-.adventure figure figcaption, .employees figure figcaption {
+.adventure figure figcaption, .employees figure figcaption, .home figure figcaption, .trips figure figcaption {
     text-align: center;
     color: #fff;
 }
 
 .employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: larger;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin: 85px auto auto auto;
+    padding: 16px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.schedule {
+    margin: 0 0 20px 0;
+}
+
+.schedule a {
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+    color: #fff;
+    background-color: var(--accent1-color);
+    width: 400px;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home p, .trips p {
+    padding: 0;
+    text-align: center;
+}
+
+.trips {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
@@ -222,6 +275,14 @@ form {
     width: 360px;
 }
 
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
 textarea {
     display: block;
     width: 400px;
@@ -242,6 +303,19 @@ button {
     background-color: var(--accent1-color);
     color: #fff;
     font-size: medium;
+}
+
+table {
+    margin: 0 auto 16px auto;
+}
+
+th {
+    width: 200px;
+    border-bottom: 1px solid var(--accent1-color);
+}
+
+th, td {
+    text-align: center;
 }
 
 footer {
